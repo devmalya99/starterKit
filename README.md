@@ -104,20 +104,19 @@ Axios	^1.8.4	HTTP client
 TailwindCSS	Latest	Utility-first CSS
 Lucide Icons	^0.485.0	Beautiful icons
 🏗️ Project Structure
-Copy
-project-root/
+fullstack-starter/
+├── client/               # React frontend
+│   ├── public/           # Static assets
+│   └── src/              # React components
+│       ├── auth/         # Authentication context
+│       ├── api/          # API service calls
+│       └── pages/        # Route pages
 │
-├── client/              # Frontend code
-│   ├── public/          # Static assets
-│   ├── src/             # React components
-│   └── .env             # Frontend environment variables
-│
-└── server/             # Backend code
-    ├── controllers/     # Route controllers
-    ├── models/          # MongoDB models
-    ├── routes/         # API routes
-    ├── middleware/     # Auth middleware
-    └── .env            # Server environment variables
+└── server/              # Node.js backend
+    ├── controllers/      # Route controllers
+    ├── models/           # MongoDB models
+    ├── routes/           # API endpoints
+    └── middleware/      # Auth middleware
 🚀 Getting Started with Development
 Clone the repository (if you haven't already)
 
